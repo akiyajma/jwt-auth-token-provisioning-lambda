@@ -1,0 +1,19 @@
+{
+    "name": "AWS Lambda Docker Dev",
+    "dockerFile": "../Dockerfile",
+    "appPort": [
+        9000
+    ],
+    "extensions": [
+        "ms-python.python",
+        "ms-azuretools.vscode-docker"
+    ],
+    "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "editor.formatOnSave": true,
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": true
+    },
+    "postCreateCommand": "pip install -r requirements-dev.txt",
+    "remoteUser": "root"
+}

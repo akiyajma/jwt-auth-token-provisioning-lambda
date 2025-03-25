@@ -1,0 +1,4 @@
+pytest
+requests-mock
+pytest-cov
+-r requirements.txt 
